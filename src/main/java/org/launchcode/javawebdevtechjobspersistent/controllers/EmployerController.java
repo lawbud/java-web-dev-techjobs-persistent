@@ -18,8 +18,8 @@ public class EmployerController {
     private EmployerRepository employerRepository;
 
     @GetMapping
-    public String displayAllEvents(Model model) {
-        model.addAttribute("title", "All Events");
+    public String displayAllEmployers(Model model) {
+        model.addAttribute("title", "All Employers");
         model.addAttribute("employers", employerRepository.findAll());
         return "employers/index";
     }
