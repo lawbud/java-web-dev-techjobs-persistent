@@ -12,5 +12,7 @@ DROP TABLE Job_table;
 
 
 ## Part 4: Test it with SQL
-SELECT name
-FROM
+SELECT name, description
+FROM skill
+INNER JOIN job_skills ON skill.id = skills_id
+ORDER BY name ASC
